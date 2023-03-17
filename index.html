@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <form>
+      <label for="message">Message:</label>
+      <input type="text" id="message" name="message">
+      <button type="button" onclick="sendMessage()">Send</button>
+  </form>
+  </body>
+</html>
+<script>
+function sendMessage() {
+  // Get the message from the input field
+  var message = document.getElementById("message").value;
+
+  // Do something with the message (e.g. send it to a server)
+  console.log("Sending message: " + message);
+
+  // Clear the input field
+  document.getElementById("message").value = "";
+}
+</script>
